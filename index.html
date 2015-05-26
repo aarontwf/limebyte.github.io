@@ -6,10 +6,22 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
         <!-- Latest compiled and minified JavaScript -->
+        <script src="//cdn.jsdelivr.net/handlebarsjs/3.0.3/handlebars.amd.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        
+        <scirpt>
+            var source = "<p>Hello, my name is {{name}}. I am from {{hometown}}. I have " +
+             "{{kids.length}} kids:</p>" +
+             "<ul>{{#kids}}<li>{{name}} is {{age}}</li>{{/kids}}</ul>";
+            var template = Handlebars.compile(source);
+            
+            var data = { "name": "Alan", "hometown": "Somewhere, TX",
+                         "kids": [{"name": "Jimmy", "age": "12"}, {"name": "Sally", "age": "4"}]};
+            var result = template(data);
+        </scirpt>
     </head>
   
     <body>
-        <h2>aaronwilson.info</h2>
+        <div class="content-placeholder"></div>
     </body>
 </html>
