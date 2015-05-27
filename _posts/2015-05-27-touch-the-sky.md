@@ -3,7 +3,7 @@ layout: post
 title: Touch The Sky
 artist: Hillsong United
 album: Empires
-categories: [Hillsong United, Empires]
+categories: [hillsong-united, empires]
 date: 2015-05-27 10:35:00
 ---
 
