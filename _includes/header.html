@@ -14,10 +14,14 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                {% for page in site.pages %}
-                    {% unless page.exclude_from_nav %}
-                        {% if page.title %}
-                            <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {% for node in site.pages %}
+                    {% unless node.exclude_from_nav %}
+                        {% if node.title %}
+                            {% page.url == node.url %}
+                                <li class="active"><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+                            {% else %}
+                                <li><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+                            {% endif %}
                         {% endif %}
                     {% endunless %}
                 {% endfor %}
