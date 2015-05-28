@@ -21,3 +21,7 @@ body {
     background: #558C89;
     color: #74AFAD;
 }
+
+.footer p {
+    margin: 0;
+}
