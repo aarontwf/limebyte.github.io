@@ -3,6 +3,10 @@ body {
     margin-top: 70px;
 }
 
+.navbar-brand {
+    color: #D9853B;
+}
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     background-color: inherit;
     color: #D9853B;
