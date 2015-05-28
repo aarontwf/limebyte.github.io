@@ -1,4 +1,13 @@
 body {
-    background: #111;
+    background: #74AFAD;
     margin-top: 70px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: inherit;
+    color: #D9853B;
+}
+
+.footer {
+    background: #558C89
 }
