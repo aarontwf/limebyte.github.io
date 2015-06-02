@@ -18,3 +18,14 @@ permalink: /music/
     </div>
     {% endfor %}
 </div>
+
+<ul class="albums">
+{% for album in site.data.albums %}
+  <li>
+    <div class="album-footer">
+        <span>{{ album.name }}</span>
+        <span>{{ album.artist }}</span>
+    </div>
+  </li>
+{% endfor %}
+</ul>
