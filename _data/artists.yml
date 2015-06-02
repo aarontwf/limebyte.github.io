@@ -1,6 +1,5 @@
-artists:
-    - name: Hillsong United
-      key: hillsong-united
+- name: Hillsong United
+  key: hillsong-united
 
-    - name: Hillsong Young & Free
-      key: hillsong-young-and-free
+- name: Hillsong Young & Free
+  key: hillsong-young-and-free
