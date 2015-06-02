@@ -1,10 +1,9 @@
-albums:
-    - name: Empires
-      year: 2015
-      artist: hillsong-united
-      art: empires.png
+- name: Empires
+  year: 2015
+  artist: hillsong-united
+  art: empires.png
 
-    - name: This Is Living
-      year: 2015
-      artist: hillsong-young-and-free
-      art: this-is-living.png
+- name: This Is Living
+  year: 2015
+  artist: hillsong-young-and-free
+  art: this-is-living.png
