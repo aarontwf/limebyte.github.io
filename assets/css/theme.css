@@ -48,15 +48,15 @@ body {
 .albums .album .album-header {
     width: 200px;
     height: 240px;
-    background-color: #CFD8DC;
-    display: inline-block;
+    background-color: #78909C;
+    float: left;
 }
 
 .albums .album .album-body {
     width: 400px;
     height: 240px;
     background-color: #CFD8DC;
-    display: inline-block;
+    float: left;
 }
 
 .albums .album .album-header .album-art {
@@ -68,7 +68,7 @@ body {
     width: 200px;
     height: 40px;
     line-height: 40px;
-    background-color: #78909C;
+    background-color: #607D8B;
     color: #ECEFF1;
 }
 
