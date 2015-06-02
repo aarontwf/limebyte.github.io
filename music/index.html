@@ -27,6 +27,11 @@ permalink: /music/
             <span>{{ album.name }}</span>
             <span>{{ artist.name }}</span>
         </div>
+        <ul class="album-songs">
+            {% for post in site.categories[album.key] %}
+                <li>{{ post.title }}</li>
+            {% endfor %}
+        </ul>
     </li>
 {% endfor %}
 </ul>
