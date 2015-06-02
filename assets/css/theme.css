@@ -49,6 +49,14 @@ body {
     width: 200px;
     height: 240px;
     background-color: #CFD8DC;
+    display: inline-block;
+}
+
+.albums .album .album-header {
+    width: 400px;
+    height: 240px;
+    background-color: #CFD8DC;
+    display: inline-block;
 }
 
 .albums .album .album-header .album-art {
