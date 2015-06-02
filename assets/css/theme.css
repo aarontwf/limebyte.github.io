@@ -1,10 +1,10 @@
 body {
-    background: #f9f9f9;
+    background: #ECEFF1;
     margin-top: 70px;
 }
 
 .navbar-default {
-    background-color: #74AFAD;
+    background-color: #607D8B;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
@@ -13,7 +13,7 @@ body {
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     background-color: inherit;
-    color: #D9853B;
+    color: #ECEFF1;
 }
 
 .footer {
@@ -22,8 +22,8 @@ body {
     width: 100%;
     height: 40px;
     line-height: 40px;
-    background: #558C89;
-    color: #74AFAD;
+    background: #CFD8DC;
+    color: #B0BEC5;
 }
 
 .footer p {
