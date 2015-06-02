@@ -1,9 +1,9 @@
 - name: Empires
   year: 2015
   artist: hillsong-united
-  art: empires.png
+  key: empires
 
 - name: This Is Living
   year: 2015
   artist: hillsong-young-and-free
-  art: this-is-living.png
+  key: this-is-living
