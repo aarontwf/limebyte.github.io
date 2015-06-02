@@ -22,16 +22,23 @@ permalink: /music/
 <ul class="albums">
 {% for album in site.data.albums %}
     {% assign artist = site.data.artists[album.artist] %}
-    <li>
-        <div class="album-footer">
-            <span>{{ album.name }}</span>
-            <span>{{ artist.name }}</span>
+    <li class="album">
+        <div class="album-header">
+            <div class="album-art">
+                
+            </div>
+            <div class="album-footer">
+                <span>{{ album.name }}</span>
+                <span>{{ artist.name }}</span>
+            </div>
         </div>
-        <ul class="album-songs">
-            {% for post in site.categories[album.key] %}
-                <li>{{ post.title }}</li>
-            {% endfor %}
-        </ul>
+        <div class="album-body">
+            <ul class="album-songs">
+                {% for post in site.categories[album.key] %}
+                    <li>{{ post.title }}</li>
+                {% endfor %}
+            </ul>
+        </div>
     </li>
 {% endfor %}
 </ul>
