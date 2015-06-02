@@ -32,6 +32,21 @@ body {
     text-decoration: none;
 }
 
+
+.albums {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.albums .album {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+}
+
+
 .footer {
     position: absolute;
     bottom: 0;
