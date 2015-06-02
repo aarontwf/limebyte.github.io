@@ -20,7 +20,7 @@ permalink: /music/
         <div class="album-body">
             <ul class="album-songs">
                 {% for post in site.categories[album.key] %}
-                    <li>{{ post.title }}</li>
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                 {% endfor %}
             </ul>
         </div>
