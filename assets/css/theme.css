@@ -41,22 +41,29 @@ body {
 
 .albums .album {
     display: inline-block;
-    height: 240px;
+    height: 260px;
     margin: 0 20px 20px 0;
 }
 
 .albums .album .album-header {
     width: 200px;
-    height: 240px;
+    height: 260px;
     background-color: #78909C;
     float: left;
 }
 
 .albums .album .album-body {
     width: 400px;
-    height: 240px;
+    height: 260px;
     background-color: #CFD8DC;
     float: left;
+    padding: 10px;
+}
+
+.albums .album .album-body ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .albums .album .album-header .album-art {
@@ -66,10 +73,11 @@ body {
 
 .albums .album .album-header .album-footer {
     width: 200px;
-    height: 40px;
-    line-height: 40px;
+    height: 60px;
+    line-height: 30px;
     background-color: #607D8B;
     color: #ECEFF1;
+    padding: 0 10px;
 }
 
 
