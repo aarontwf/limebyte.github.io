@@ -80,6 +80,10 @@ body {
     padding: 0 10px;
 }
 
+.albums .album .album-header .album-footer p {
+    margin: 0;
+}
+
 
 .footer {
     position: absolute;
