@@ -1,6 +1,10 @@
 body {
-    background: #74AFAD;
+    background: #f9f9f9;
     margin-top: 70px;
+}
+
+.navbar-default {
+    background-color: #74AFAD;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
