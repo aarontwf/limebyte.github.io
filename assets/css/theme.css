@@ -52,7 +52,7 @@ body {
     display: inline-block;
 }
 
-.albums .album .album-header {
+.albums .album .album-body {
     width: 400px;
     height: 240px;
     background-color: #CFD8DC;
