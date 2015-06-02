@@ -4,21 +4,6 @@ title: Music
 permalink: /music/
 ---
 
-<div class="posts">
-    {% for post in site.posts %}
-    <div class="row">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </div>
-            <div class="panel-body">
-                {{ post.excerpt }}
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-</div>
-
 <ul class="albums">
 {% for album in site.data.albums %}
     {% assign artist = site.data.artists[album.artist] %}
