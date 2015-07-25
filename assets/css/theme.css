@@ -1,11 +1,12 @@
 body {
     background: #ECEFF1;
-    height: 100%;
     margin-top: 70px;
+    margin-bottom: 40px;
 }
 
-html, body {
-    height: 100%;
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 .navbar-default {
@@ -91,6 +92,8 @@ html, body {
 
 
 .footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 40px;
     line-height: 40px;
