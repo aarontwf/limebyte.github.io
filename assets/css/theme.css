@@ -1,6 +1,17 @@
 body {
     background: #ECEFF1;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper>.container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
     margin-top: 70px;
+    margin-bottom: -40px;
 }
 
 .navbar-default {
@@ -86,8 +97,6 @@ body {
 
 
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     height: 40px;
     line-height: 40px;
