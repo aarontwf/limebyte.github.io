@@ -104,3 +104,8 @@ html {
 .footer p {
     margin: 0;
 }
+
+#post {
+    margin-bottom: 40px;
+}
+}
