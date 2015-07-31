@@ -5,20 +5,17 @@ layout: default
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <header>
-        <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+        <h1>{{ page.title }}</h1>
       </header>
 
       <nav>
         <span class="field">
-          <i class="fa fa-list-ul"></i>
-          <span>{{ page.author }}</span>
+          <span class="glyphicon glyphicon-equalizer"></span>
+          {{ page.author }} - {{ page.album }}
         </span>
         <span class="field">
-          <i class="fa fa-calendar"></i>{{ page.date | date_to_long_string }}
-        </span>
-        <span class="field">
-          <i class="fa fa-tags"></i>
-          <span>{{ page.album }}</span>
+          <span class="glyphicon glyphicon-calendar"></span>
+          {{ page.date | date_to_long_string }}
         </span>
       </nav>
 
