@@ -41,6 +41,9 @@ html {
 
 .albums {
     list-style-type: none;
+    columns: 2 300px;
+    -moz-columns: 2 300px;
+    -webkit-columns: 2 300px;
     margin: 0;
     padding: 0;
 }
@@ -48,7 +51,7 @@ html {
 .albums .album {
     display: inline-block;
     height: 260px;
-    margin: 0 20px 20px 0;
+    margin-bottom: 20px;
 }
 
 .albums .album .album-header {
@@ -59,7 +62,7 @@ html {
 }
 
 .albums .album .album-body {
-    width: 400px;
+    width: 350px;
     height: 260px;
     background-color: #CFD8DC;
     float: left;
