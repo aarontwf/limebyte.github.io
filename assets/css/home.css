@@ -1,0 +1,8 @@
+html {
+    background: url('/assets/img/background.jpg') no-repeat center center;
+    background-size:cover;
+}
+
+body {
+    min-height:100%;
+}
