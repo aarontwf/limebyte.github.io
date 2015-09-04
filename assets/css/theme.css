@@ -115,6 +115,21 @@ a {
     padding: 0;
 }
 
+.footer-links li {
+    display: inline;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.footer-links.pull-right li {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.footer a:focus, .footer a:hover {
+    text-decoration: none;
+}
+
 #post {
     margin-bottom: 40px;
 }
