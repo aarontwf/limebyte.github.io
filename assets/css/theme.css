@@ -32,6 +32,14 @@ a {
     color: #ECEFF1;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #111;
+}
+
 .panel-default>.panel-heading {
     background-color: #90A4AE;
     border-color: #78909C;

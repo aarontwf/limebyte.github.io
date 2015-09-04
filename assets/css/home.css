@@ -10,6 +10,7 @@ body {
 
 .footer {
     color: #fff;
+    background: rgba(1, 1, 1, 0.4);
 }
 
 .footer a {
