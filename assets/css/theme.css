@@ -40,6 +40,10 @@ a {
     background-color: #111;
 }
 
+.master-heading {
+    color: #fff;
+}
+
 .panel-default>.panel-heading {
     background-color: #90A4AE;
     border-color: #78909C;
