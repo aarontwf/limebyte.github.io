@@ -107,10 +107,12 @@ a {
     height: 40px;
     line-height: 40px;
     color: #777;
+    overflow: hidden;
 }
 
 .footer-links {
     list-style: none;
+    padding: 0;
 }
 
 #post {
