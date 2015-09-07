@@ -1,15 +1,25 @@
 html {
-    background-color: #999;
-    background-image: url('/assets/img/background.jpg');
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-size: cover;
+    background-color: #333;
 }
 
 body {
     min-height:100%;
     background: transparent;
+}
+
+#dummyBg {
+    left:0;
+    top:0;
+    margin:0;
+    padding:0;
+    width:100% !important;
+    height:100% !important;
+    z-index:-1000;
+    background-image: url('/assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
 }
 
 .footer {

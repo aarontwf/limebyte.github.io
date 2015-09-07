@@ -5,15 +5,24 @@
 
     <body>
 
+        <div id="dummyBg" style="display: none"></div>
+    
         <div class="wrapper">
             {% include header.html %}
     
-            <div class="container">
+            <div class="container" style="display: none">
                 {{ content }}
             </div>
         
             {% include footer.html %}
         </div>
+    
+        <script type="text/javascript">
+            $(function(){
+                $("#dummyBg").fadeIn();
+                $('.container').fadeIn();
+            });
+        </script>
     
         {% include scripts.html %}
 
