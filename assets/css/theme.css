@@ -19,7 +19,7 @@ a {
     border-color: #111;
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus  {
     color: #ECEFF1;
 }
 
