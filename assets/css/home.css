@@ -8,12 +8,13 @@ body {
 }
 
 #dummyBg {
+    position: absolute;
     left:0;
     top:0;
+    bottom:0;
+    right:0;
     margin:0;
     padding:0;
-    width:100% !important;
-    height:100% !important;
     z-index:-1000;
     background-image: url('/assets/img/background.jpg');
     background-repeat: no-repeat;
