@@ -21,10 +21,11 @@
         
         <script type="text/javascript">
             $('<img/>').attr('src', '/assets/img/background.jpg').load(function() {
-               $(this).remove();
-               $('#dummyBg').css('background-image', 'url(/assets/img/background.jpg)');
-               $("#dummyBg").fadeIn();
-               $('.container').fadeIn();
+                $(this).remove();
+                $('#dummyBg').css('background-image', 'url(/assets/img/background.jpg)');
+                $("#dummyBg").fadeIn(1000, function() {
+                    $('.container').fadeIn(1000);
+                });
             });
         </script>
 
