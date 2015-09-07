@@ -57,18 +57,11 @@ a {
 
 
 .albums {
-    list-style-type: none;
-    columns: 2 300px;
-    -moz-columns: 2 300px;
-    -webkit-columns: 2 300px;
-    margin: 0;
-    padding: 0;
+
 }
 
 .albums .album {
-    display: inline-block;
     height: 260px;
-    margin-bottom: 20px;
 }
 
 .albums .album .album-header {

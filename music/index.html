@@ -4,11 +4,11 @@ title: Music
 permalink: /music/
 ---
 
-<ul class="albums">
+<div class="albums row">
 {% for album in site.data.albums %}
     {% if site.categories[album.key].size > 0 %}
         {% assign artist = site.data.artists[album.artist] %}
-        <li class="album">
+        <div class="album col-md-6">
             <div class="album-header">
                 <div class="album-art">
                     <img src="../assets/img/album/{{ album.key}}.jpg" />
@@ -25,7 +25,7 @@ permalink: /music/
                     {% endfor %}
                 </ul>
             </div>
-        </li>
+        </div>
     {% endif %}
 {% endfor %}
-</ul>
+</div>
