@@ -55,43 +55,43 @@ a {
     text-decoration: none;
 }
 
-
-.albums {
-
-}
-
-.albums .album {
+.album {
     height: 260px;
+    margin-bottom: 20px;
 }
 
-.albums .album .album-header {
+.album .album-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.album .album-header {
     width: 200px;
     height: 260px;
     background-color: #222;
     float: left;
 }
 
-.albums .album .album-body {
-    width: 350px;
+.album .album-body {
     height: 260px;
-    background-color: #fff;
     float: left;
     padding: 10px;
-    border: 1px solid #ddd;
+    
 }
 
-.albums .album .album-body ul {
+.album .album-body ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.albums .album .album-header .album-art {
+.album .album-header .album-art {
     width: 200px;
     height: 200px;
 }
 
-.albums .album .album-header .album-footer {
+.album .album-header .album-footer {
     width: 200px;
     height: 60px;
     line-height: 30px;
@@ -100,7 +100,7 @@ a {
     padding: 0 10px;
 }
 
-.albums .album .album-header .album-footer p {
+.album .album-header .album-footer p {
     margin: 0;
 }
 
