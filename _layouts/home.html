@@ -20,9 +20,11 @@
         {% include scripts.html %}
         
         <script type="text/javascript">
-            $(function(){
-                $("#dummyBg").fadeIn();
-                $('.container').fadeIn();
+            $('<img/>').attr('src', '/assets/img/background.jpg').load(function() {
+               $(this).remove();
+               $('#dummyBg').css('background-image', 'url(/assets/img/background.jpg)');
+               $("#dummyBg").fadeIn();
+               $('.container').fadeIn();
             });
         </script>
 
