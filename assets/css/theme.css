@@ -71,6 +71,24 @@ a {
     height: 260px;
     background-color: #222;
     float: left;
+    margin-top: -1px;
+}
+
+.album .album-header .album-art {
+    width: 200px;
+    height: 200px;
+}
+
+.album .album-header .album-footer {
+    width: 200px;
+    height: 48px;
+    line-height: 24px;
+    color: #fff;
+    padding: 6px 10px;
+}
+
+.album .album-header .album-footer p {
+    margin: 0;
 }
 
 .album .album-body {
@@ -84,24 +102,10 @@ a {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.album .album-header .album-art {
-    width: 200px;
-    height: 200px;
-}
-
-.album .album-header .album-footer {
-    width: 200px;
-    height: 60px;
-    line-height: 30px;
-    background-color: #222;
-    color: #fff;
-    padding: 0 10px;
-}
-
-.album .album-header .album-footer p {
-    margin: 0;
+    height: 100%;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
 }
 
 
