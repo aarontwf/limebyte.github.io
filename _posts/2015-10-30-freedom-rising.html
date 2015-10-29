@@ -14,28 +14,27 @@ date: 2015-10-30 09:46:00
 {% for section in song.sections %}
   <h4>{{ section.name }}</h4>
   
-<pre>
-options space=20
-{% for stave in section.staves %}
-  tabstave
-    notation=true
-    key={{ song.key }} time={{ song.time-signature }}
-    
-    {% for line in stave %}{{ line }}
+  <pre>
+    options space=20
+    {% for stave in section.staves %}
+      tabstave
+        notation=true
+        key={{ song.key }} time={{ song.time-signature }}
+        
+        {% for line in stave %}{{ line }}
+        {% endfor %}
     {% endfor %}
-{% endfor %}
-options space=25
-</pre>
+  </pre>
   
   <div class="vex-tabdiv" width=750 scale=1.0 editor="false" editor_width=680 editor_height=330>
-options space=20
-{% for stave in section.staves %}
-  tabstave
-    notation=true
-    key={{ song.key }} time={{ song.time-signature }}
-    
-    {% for line in stave %}{{ line }}{% endfor %}
-{% endfor %}
-options space=25
+    options space=20
+    {% for stave in section.staves %}
+      tabstave
+        notation=true
+        key={{ song.key }} time={{ song.time-signature }}
+        
+        {% for line in stave %}{{ line }}
+        {% endfor %}
+    {% endfor %}
   </div>
 {% endfor %}
