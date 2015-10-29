@@ -11,6 +11,9 @@ date: 2015-10-30 09:46:00
 
 {% for section in site.data.songs.equippers-revolution.freedom-rising.sections %}
   <h4>{{ section.name }}</h4>
+  <pre>
+    {{ section.vextab }}
+  </pre>
   <div class="vex-tabdiv" width=750 scale=1.0 editor="false" editor_width=680 editor_height=330>
     {{ section.vextab }}
   </div>
