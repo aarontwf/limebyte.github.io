@@ -1,3 +1,5 @@
+{% assign song = site.data.songs.[page.artist].[page.title] %}
+
 <!DOCTYPE html>
 <html>
 
@@ -13,7 +15,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <header>
-                                <h1>{{ page.title }}</h1>
+                                <h1>{{ song.name }}</h1>
                             </header>
 
                             <nav>
@@ -28,7 +30,25 @@
                             </nav>
 
                             <section>
+                                
+                                
+                                {% for section in song.sections %}
+                                  <h4>{{ section.name }}</h4>
+                                  
+                                  <div class="vex-tabdiv" width=940 scale=1.0 editor="false">
+                                    {% for stave in section.staves %}
+                                      tabstave
+                                        notation=true
+                                        key={{ song.key }} time={{ song.time-signature }}
+                                        
+                                        {% for line in stave %}{{ line }}
+                                        {% endfor %}
+                                    {% endfor %}
+                                  </div>
+                                {% endfor %}
+                                
                                 <p>{{ content }}</p>
+                                
                             </section>
                         </div>
                     </div>
