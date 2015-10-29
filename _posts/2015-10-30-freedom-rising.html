@@ -21,7 +21,8 @@ options space=20
     notation=true
     key={{ song.key }} time={{ song.time-signature }}
     
-    {% for line in stave %}{{ line }}{% endfor %}
+    {% for line in stave %}{{ line }}
+    {% endfor %}
 {% endfor %}
 options space=25
 </pre>
