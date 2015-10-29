@@ -1,7 +1,12 @@
 - name: This Is How We Party
   year: 2015
-  artist: the-revolution
+  artist: equippers-revolution
   key: this-is-how-we-party
+  
+- name: Thunder
+  year: 2015
+  artist: equippers-revolution
+  key: thunder
 
 - name: Empires
   year: 2015
