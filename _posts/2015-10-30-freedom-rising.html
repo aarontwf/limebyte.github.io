@@ -1,27 +1,8 @@
 ---
 layout: song
-title: Freedom Rising
-artist: The Revolution
-album: This Is How We Party
+title: freedom-rising
+artist: equippers-revolution
+album: thunder
 categories: [the-revolution, this-is-how-we-party]
 date: 2015-10-30 09:46:00
 ---
-
-<h2>Lead</h2>
-
-{% assign song = site.data.songs.equippers-revolution.freedom-rising %}
-
-{% for section in song.sections %}
-  <h4>{{ section.name }}</h4>
-  
-  <div class="vex-tabdiv" width=940 scale=1.0 editor="false">
-    {% for stave in section.staves %}
-      tabstave
-        notation=true
-        key={{ song.key }} time={{ song.time-signature }}
-        
-        {% for line in stave %}{{ line }}
-        {% endfor %}
-    {% endfor %}
-  </div>
-{% endfor %}
