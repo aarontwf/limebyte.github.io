@@ -1,0 +1,17 @@
+---
+layout: post
+title: Freedom Rising
+artist: The Revolution
+album: This Is How We Party
+categories: [the-revolution, this-is-how-we-party]
+date: 2015-10-30 09:46:00
+---
+
+<h2>Lead</h2>
+
+{% for section in site.data.songs.equippers-revolution %}
+  <h4>{{ section.name }}</h4>
+  <div class="vex-tabdiv" width=750 scale=1.0 editor="false" editor_width=680 editor_height=330>
+    {{ section.vextab }}
+  </div>
+{% endfor %}
