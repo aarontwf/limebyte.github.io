@@ -36,7 +36,6 @@
                                   <h4>{{ section.name }}</h4>
                                   
                                   <div class="vex-tabdiv" width=940 scale=1.0 editor="false">
-                                      vextab
                                     {% for stave in section.staves %}
                                       options player=true tempo={{ song.tempo }}
                                       tabstave
@@ -54,7 +53,6 @@
                             </section>
                             
                             <pre style="display: none;">
-                                vextab
                             {% for stave in section.staves %}
                               options player=true tempo={{ song.tempo }}
                               tabstave
