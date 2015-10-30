@@ -1,4 +1,5 @@
 {% assign song = site.data.songs.[page.artist].[page.title] %}
+{% assign artist = site.data.artists[page.artist] %}
 
 <!DOCTYPE html>
 <html>
@@ -18,24 +19,22 @@
                                 <h1>{{ song.name }}</h1>
                             </header>
 
-                            <nav>
-                                <span class="field">
-                                    <span class="glyphicon glyphicon-equalizer"></span>
-                                    {{ page.album }} // {{ page.artist }}
-                                </span>
-                                <span class="field">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="glyphicon glyphicon-music"></span>
+                                    {{ page.album }} // {{ artist.name }}
+                                </li>
+                                <li>
                                     <span class="glyphicon glyphicon-calendar"></span>
                                     {{ page.date | date_to_long_string }}
-                                </span>
-                            </nav>
+                                </li>
+                            </ul>
 
                             <section>
-                                
-                                
                                 {% for section in song.sections %}
-                                  <h4>{{ section.name }}</h4>
+                                  <h3>{{ section.name }}</h3>
                                   
-                                  <div class="vex-tabdiv" width=940 scale=1.0 editor="false">
+                                  <div class="vex-tabdiv" width=940 scale=0.8 editor="false">
                                     {% for stave in section.staves %}
                                       options player=true tempo={{ song.tempo }}
                                       tabstave
