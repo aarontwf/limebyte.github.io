@@ -12,59 +12,57 @@
             {% include header.html %}
     
             <div class="container">
-                <article id="post" class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <header>
-                                <h1>{{ song.name }}</h1>
-                            </header>
+                <div class="row">
+                    <div class="col-md-12">
+                        <header>
+                            <h1>{{ song.name }}</h1>
+                        </header>
 
-                            <ul class="list-unstyled">
-                                <li>
-                                    <span class="glyphicon glyphicon-music"></span>
-                                    {{ page.album }} &middot; {{ artist.name }}
-                                </li>
-                                <li>
-                                    <span class="glyphicon glyphicon-calendar"></span>
-                                    {{ page.date | date_to_long_string }}
-                                </li>
-                            </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <span class="glyphicon glyphicon-music"></span>
+                                {{ page.album }} &middot; {{ artist.name }}
+                            </li>
+                            <li>
+                                <span class="glyphicon glyphicon-calendar"></span>
+                                {{ page.date | date_to_long_string }}
+                            </li>
+                        </ul>
 
-                            <section>
-                                {% for section in song.sections %}
-                                  <h3>{{ section.name }}</h3>
-                                  
-                                  <div class="vex-tabdiv" width=940 scale=1.0 editor="false">
-                                    {% for stave in section.staves %}
-                                      options player=true tempo={{ song.tempo }}
-                                      tabstave
-                                        notation=true
-                                        key={{ song.key }} time={{ song.time-signature }}
-                                        
-                                        {% for line in stave %}{{ line }}
-                                        {% endfor %}
+                        <section>
+                            {% for section in song.sections %}
+                              <h3>{{ section.name }}</h3>
+                              
+                              <div class="vex-tabdiv" width=940 scale=1.0 editor="false">
+                                {% for stave in section.staves %}
+                                  options player=true tempo={{ song.tempo }}
+                                  tabstave
+                                    notation=true
+                                    key={{ song.key }} time={{ song.time-signature }}
+                                    
+                                    {% for line in stave %}{{ line }}
                                     {% endfor %}
-                                  </div>
-                                  
-                                  <pre style="display: none;">
-                                    {% for stave in section.staves %}
-                                      options player=true tempo={{ song.tempo }}
-                                      tabstave
-                                        notation=true
-                                        key={{ song.key }} time={{ song.time-signature }}
-                                        
-                                        {% for line in stave %}{{ line }}
-                                        {% endfor %}
-                                    {% endfor %}
-                                  </pre>
                                 {% endfor %}
-                                
-                                <p>{{ content }}</p>
-                                
-                            </section>
-                        </div>
+                              </div>
+                              
+                              <pre style="display: none;">
+                                {% for stave in section.staves %}
+                                  options player=true tempo={{ song.tempo }}
+                                  tabstave
+                                    notation=true
+                                    key={{ song.key }} time={{ song.time-signature }}
+                                    
+                                    {% for line in stave %}{{ line }}
+                                    {% endfor %}
+                                {% endfor %}
+                              </pre>
+                            {% endfor %}
+                            
+                            <p>{{ content }}</p>
+                            
+                        </section>
                     </div>
-                </article>
+                </div>
             </div>
         
             {% include footer.html %}
