@@ -46,23 +46,23 @@
                                         {% endfor %}
                                     {% endfor %}
                                   </div>
+                                  
+                                  <pre style="display: none;">
+                                    {% for stave in section.staves %}
+                                      options player=true tempo={{ song.tempo }}
+                                      tabstave
+                                        notation=true
+                                        key={{ song.key }} time={{ song.time-signature }}
+                                        
+                                        {% for line in stave %}{{ line }}
+                                        {% endfor %}
+                                    {% endfor %}
+                                  </pre>
                                 {% endfor %}
                                 
                                 <p>{{ content }}</p>
                                 
                             </section>
-                            
-                            <pre style="display: none;">
-                            {% for stave in section.staves %}
-                              options player=true tempo={{ song.tempo }}
-                              tabstave
-                                notation=true
-                                key={{ song.key }} time={{ song.time-signature }}
-                                
-                                {% for line in stave %}{{ line }}
-                                {% endfor %}
-                            {% endfor %}
-                            </pre>
                         </div>
                     </div>
                 </article>
