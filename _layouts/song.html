@@ -14,20 +14,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 page">
-                        <header>
-                            <h1>{{ song.name }}</h1>
-                        </header>
+                        <div class="row page-heading">
+                            <div class="heading-text">
+                                <header>
+                                    <h1>{{ song.name }}</h1>
+                                </header>
 
-                        <ul class="list-unstyled">
-                            <li>
-                                <span class="glyphicon glyphicon-music"></span>
-                                {{ page.album }} &middot; {{ artist.name }}
-                            </li>
-                            <li>
-                                <span class="glyphicon glyphicon-calendar"></span>
-                                {{ page.date | date_to_long_string }}
-                            </li>
-                        </ul>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="glyphicon glyphicon-music"></span>
+                                        {{ page.album }} &middot; {{ artist.name }}
+                                    </li>
+                                    <li>
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                        {{ page.date | date_to_long_string }}
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="heading-image hidden-xs">
+                            </div>
+                        </div>
 
                         <section>
                             {% for section in song.sections %}

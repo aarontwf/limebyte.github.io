@@ -175,3 +175,22 @@ a {
 #post {
     margin-bottom: 40px;
 }
+
+.page-heading {
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 20px;
+    height: 130px;
+}
+
+.page-heading .heading-text {
+    margin-left: 15px;
+    float: left;
+}
+
+.page-heading .heading-image {
+    background: purple;
+    height: 130px;
+    float: right;
+    width: 130px;
+}

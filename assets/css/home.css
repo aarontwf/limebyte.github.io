@@ -39,4 +39,33 @@ body {
 .master-quote {
     color: #fff;
     font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+}
+
+.master-quote h1 {
+    font-size: 20px;
+}
+
+@media (min-height: 630px) {
+    .master-quote {
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        margin-top: 0;
+    }
+
+    .master-quote h1 {
+        font-size: 20px;
+    }
+}
+
+@media (min-height: 630px) {
+    .master-quote {
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        margin-top: 40px;
+    }
+
+    .master-quote h1 {
+        font-size: 36px;
+    }
 }
