@@ -5,39 +5,35 @@ permalink: /music/
 ---
 
 <div class="albums row">
-{% for album_hash in site.data.albums %}
-    {% for album in album_hash %}
-        <p>ALBUM 0: {{ album[0] }} </p>
-        <p>ALBUM 1: {{ album[1] }} </p>
-    {% endfor %}
-{% endfor %}
 
 {% for album_hash in site.data.albums %}
-    {% for album in album_hash %}
-        <p>ALBUM: {{ album }} </p>
-
-            {% assign artist = site.data.artists[album[1].artist] %}
+    {% for key in album_hash %}
+        <p>KEY: {{ key }} </p>
+        {% assign mod = forloop.index | modulo: 2 %}
+        {% if mod == 0 %}
+            {% assign album = site.data.albums[key] %}
+            {% assign artist = site.data.artists[album.artist] %}
             <div class="album col-md-6">
                 <div class="album-content">
                     <div class="album-header">
                         <div class="album-art">
-                            <img src="../assets/img/album/{{ album.key}}.jpg" />
+                            <img src="../assets/img/album/{{ key }}.jpg" />
                         </div>
                         <div class="album-footer">
-                            <p>{{ album[1].name }}</p>
+                            <p>{{ album.name }}</p>
                             <p>{{ artist.name }}</p>
                         </div>
                     </div>
                     <div class="album-body">
                         <ul class="album-songs">
-                            {% for post in site.categories[album[0]] %}
-                                <li><a href="{{ post.url }}">{{ site.data.songs.[album[1].artist].[post.title].name }}</a></li>
+                            {% for post in site.categories[key] %}
+                                <li><a href="{{ post.url }}">{{ site.data.songs.[album.artist].[post.title].name }}</a></li>
                             {% endfor %}
                         </ul>
                     </div>
                 </div>
             </div>
-
+        {% endif %}
     {% endfor %}
 {% endfor %}
 </div>
