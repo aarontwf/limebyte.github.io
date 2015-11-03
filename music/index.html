@@ -6,35 +6,29 @@ permalink: /music/
 
 <div class="albums row">
 
-{% for album_hash in site.data.albums %}
-    <p>HASH: {{ album_hash }} </p>
-    <p>HASH 0: {{ album_hash[0] }} </p>
-    <p>HASH 1: {{ album_hash[1] }} </p>
-    
-    {% assign mod = forloop.index | modulo: 2 %}
-    {% if mod == 0 %}
-        {% assign album = site.data.albums[key] %}
-        {% assign artist = site.data.artists[album.artist] %}
-        <div class="album col-md-6">
-            <div class="album-content">
-                <div class="album-header">
-                    <div class="album-art">
-                        <img src="../assets/img/album/{{ key }}.jpg" />
-                    </div>
-                    <div class="album-footer">
-                        <p>{{ album.name }}</p>
-                        <p>{{ artist.name }}</p>
-                    </div>
+{% for album in site.data.albums %}
+    {% assign key = album[0] %}
+    {% assign album = album[1] %}
+    {% assign artist = site.data.artists[album.artist] %}
+    <div class="album col-md-6">
+        <div class="album-content">
+            <div class="album-header">
+                <div class="album-art">
+                    <img src="../assets/img/album/{{ key }}.jpg" />
                 </div>
-                <div class="album-body">
-                    <ul class="album-songs">
-                        {% for post in site.categories[key] %}
-                            <li><a href="{{ post.url }}">{{ site.data.songs.[album.artist].[post.title].name }}</a></li>
-                        {% endfor %}
-                    </ul>
+                <div class="album-footer">
+                    <p>{{ album.name }}</p>
+                    <p>{{ artist.name }}</p>
                 </div>
             </div>
+            <div class="album-body">
+                <ul class="album-songs">
+                    {% for post in site.categories[key] %}
+                        <li><a href="{{ post.url }}">{{ site.data.songs.[album.artist].[post.title].name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-    {% endif %}
+    </div>
 {% endfor %}
 </div>
