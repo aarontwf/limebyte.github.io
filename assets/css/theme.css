@@ -55,6 +55,11 @@ a {
     text-decoration: none;
 }
 
+.page {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
 .album {
 
     margin-bottom: 20px;
