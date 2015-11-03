@@ -8,27 +8,31 @@ permalink: /music/
 
 {% for album_hash in site.data.albums %}
     {% assign key = album_hash[0] %}
-    {% assign album = album_hash[1] %}
-    {% assign artist = site.data.artists[album.artist] %}
-    <div class="album col-md-6">
-        <div class="album-content">
-            <div class="album-header">
-                <div class="album-art">
-                    <img src="../assets/img/album/{{ key }}.jpg" />
+
+    {% if site.categories[key].size > 0 %}
+        {% assign album = album_hash[1] %}
+        {% assign artist = site.data.artists[album.artist] %}
+        
+        <div class="album col-md-6">
+            <div class="album-content">
+                <div class="album-header">
+                    <div class="album-art">
+                        <img src="../assets/img/album/{{ key }}.jpg" />
+                    </div>
+                    <div class="album-footer">
+                        <p>{{ album.name }}</p>
+                        <p>{{ artist.name }}</p>
+                    </div>
                 </div>
-                <div class="album-footer">
-                    <p>{{ album.name }}</p>
-                    <p>{{ artist.name }}</p>
+                <div class="album-body">
+                    <ul class="album-songs">
+                        {% for post in site.categories[key] %}
+                            <li><a href="{{ post.url }}">{{ site.data.songs.[album.artist].[post.title].name }}</a></li>
+                        {% endfor %}
+                    </ul>
                 </div>
-            </div>
-            <div class="album-body">
-                <ul class="album-songs">
-                    {% for post in site.categories[key] %}
-                        <li><a href="{{ post.url }}">{{ site.data.songs.[album.artist].[post.title].name }}</a></li>
-                    {% endfor %}
-                </ul>
             </div>
         </div>
-    </div>
+    {% endif %}
 {% endfor %}
 </div>
