@@ -7,7 +7,7 @@ permalink: /music/
 <div class="albums row">
 {% for album_hash in site.data.albums %}
     {{ album_hash }}
-    {% for album in site.data.albums %}
+    {% for album in album_hash %}
         {{ album }}
         {% if site.categories[album[0]].size > 0 %}
             {% assign artist = site.data.artists[album[1].artist] %}
