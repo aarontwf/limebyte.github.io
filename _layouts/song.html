@@ -1,5 +1,6 @@
 {% assign song = site.data.songs.[page.artist].[page.title] %}
 {% assign artist = site.data.artists[page.artist] %}
+{% assign album = site.data.artists[page.album] %}
 
 <!DOCTYPE html>
 <html>
@@ -23,17 +24,16 @@
                                 <ul class="list-unstyled">
                                     <li>
                                         <span class="glyphicon glyphicon-music"></span>
-                                        {{ page.album }} &middot; {{ artist.name }}
+                                        {{ album.name }} ({{ album.year }}) - {{ artist.name }}
                                     </li>
                                     <li>
                                         <span class="glyphicon glyphicon-calendar"></span>
-                                        {{ page.date | date_to_long_string }}
+                                        Updated {{ page.date | date_to_long_string }}
                                     </li>
                                 </ul>
                             </div>
                             
-                            <div class="heading-image hidden-xs">
-                            </div>
+                            <img class="heading-image hidden-xs" src="../assets/img/album/{{ page.album }}.jpg" />
                         </div>
 
                         <section>

@@ -1,34 +1,34 @@
-- name: Thunder
+thunder:
+  name: Thunder
   year: 2015
   artist: equippers-revolution
-  key: thunder
 
-- name: This Is How We Party
+this-is-how-we-party:
+  name: This Is How We Party
   year: 2015
   artist: equippers-revolution
-  key: this-is-how-we-party
 
-- name: Empires
+empires:
+  name: Empires
   year: 2015
   artist: hillsong-united
-  key: empires
 
-- name: This Is Living
+this-is-living:
+  name: This Is Living
   year: 2015
   artist: hillsong-young-and-free
-  key: this-is-living
-  
-- name: This Is Our Time
-  year: 2014
-  artist: planetshakers
-  key: this-is-our-time
 
-- name: Endless Praise
+this-is-our-time:
+  name: This Is Our Time
   year: 2014
   artist: planetshakers
-  key: endless-praise
-  
-- name: No Other Name
+
+endless-praise:
+  name: Endless Praise
+  year: 2014
+  artist: planetshakers
+
+no-other-name:
+  name: No Other Name
   year: 2014
   artist: hillsong-worship
-  key: no-other-name

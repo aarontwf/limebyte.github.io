@@ -198,9 +198,12 @@ a {
     font-weight: 400;
 }
 
+.page-heading .heading-text ul .glyphicon {
+    margin-right: 4px;
+}
+
 .page-heading .heading-image {
-    background: purple;
+    width: 130px;
     height: 130px;
     float: right;
-    width: 130px;
 }
