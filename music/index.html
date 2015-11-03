@@ -5,14 +5,10 @@ permalink: /music/
 ---
 
 <div class="albums row">
-{% for album in site.data.albums %}
+{% for album_hash in site.data.albums %}
+    {% for album in album_hash %}
         {{ album }}
-        </br>
-        {{ album[0] }}
-        </br>
-        {{ album[1] }}
-        </br>
-        {% if site.categories[album[0]].size > 0 %}
+
             {% assign artist = site.data.artists[album[1].artist] %}
             <div class="album col-md-6">
                 <div class="album-content">
@@ -34,7 +30,7 @@ permalink: /music/
                     </div>
                 </div>
             </div>
-        {% endif %}
+
     {% endfor %}
 {% endfor %}
 </div>
