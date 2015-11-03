@@ -22,8 +22,7 @@ permalink: /music/
                 <div class="album-body">
                     <ul class="album-songs">
                         {% for post in site.categories[album.key] %}
-                            {% assign track = site.data.songs.[album.artist].[post.title].name %}
-                            <li><a href="{{ post.url }}">{{ track }}</a></li>
+                            <li><a href="{{ post.url }}">{{ site.data.songs.[album.artist].[post.title].name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
