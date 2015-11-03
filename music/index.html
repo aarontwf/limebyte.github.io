@@ -6,9 +6,9 @@ permalink: /music/
 
 <div class="albums row">
 
-{% for album in site.data.albums %}
-    {% assign key = album[0] %}
-    {% assign album = album[1] %}
+{% for album_hash in site.data.albums %}
+    {% assign key = album_hash[0] %}
+    {% assign album = album_hash[1] %}
     {% assign artist = site.data.artists[album.artist] %}
     <div class="album col-md-6">
         <div class="album-content">
