@@ -6,7 +6,13 @@ permalink: /music/
 
 <div class="albums row">
 {% for album_hash in site.data.albums %}
-    <p>ALBUM HASH: {{ album }} </p>
+    {% for album in album_hash %}
+        <p>ALBUM 0: {{ album[0] }} </p>
+        <p>ALBUM 1: {{ album[1] }} </p>
+    {% endfor %}
+{% endfor %}
+
+{% for album_hash in site.data.albums %}
     {% for album in album_hash %}
         <p>ALBUM: {{ album }} </p>
 
